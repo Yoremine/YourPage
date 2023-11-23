@@ -1,13 +1,9 @@
+@import "/blocks/normalize.css";
 @import "/blocks/__header/h1.css";
 @import "/blocks/__main/profile.css";
 @import "/blocks/__main/button.css";
 
-body {
-    background-color: blueviolet;
-}
-
 header {
     width: 1000px;
     background-color: black;
-    margin: 0 auto;
 }
