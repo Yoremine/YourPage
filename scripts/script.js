@@ -25,3 +25,12 @@ function showPhoto() {
         profilePhoto.style.display = "none";
     }
 }
+
+function ShowImage(){
+    if(profileImage.classList.contains('profile__image_unvisiable')){
+      profileImage.classList.remove('profile__image_unvisiable');
+    }
+    else {
+      profileImage.classList.add('profile__image_unvisiable');
+    }
+  }
