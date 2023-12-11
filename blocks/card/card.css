@@ -86,3 +86,10 @@
   color: #000000;
   margin: 0;
 }
+
+.scale {
+  transition: 0.5s; /* Время эффекта */
+ }
+ .scale:hover {
+  transform: scale(1.12); /* Увеличиваем масштаб */
+ }
