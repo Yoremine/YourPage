@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Example JS</title>
+  <title>Твоя страница</title>
   <link rel="stylesheet" href="./pages/index.css" >
 </head>
 <body class="root">
-  <h1 class="root__title">Пример создания галереи</h1>
+  <h1 class="root__title">Галерея</h1>
   <section class="profile profile_unvisiable">
     <h2 class="profile__title">Профиль</h2>
     <img src="./images/lena_color.gif" alt="Фото" class="profile__image ">
@@ -44,12 +44,28 @@
         >Изменить профиль</button>
     </div>
   </section>
+
+  <div id="myModal" class="modal">
+  
+   
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <image class="zoom-image" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg"> </image>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  
+  </div>
   
   <section class="cards">
     
   </section>
   <dialog id="dialog-id">  
-    <form class="popup">
+    <form class="popup" id="form1">
       <h2 class="popup__title">Добавить изображение</h2>    
       <input
         class="popup__input"
