@@ -93,3 +93,27 @@
  .scale:hover {
   transform: scale(1.12); /* Увеличиваем масштаб */
  }
+
+ .card__like{
+  min-width: 22px;
+  min-height: 19px;
+  background-color: unset;
+  background-image: url("./../../../images/heart.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  opacity: 1;
+  transition: 0.5s linear;
+}
+
+.card__like_checked{
+  background-image: url("./../../../images/heart_black.svg");
+}
+
+.card__like-counter{
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+}

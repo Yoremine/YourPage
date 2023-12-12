@@ -26,11 +26,38 @@ function showPhoto() {
     }
 }
 
-function ShowImage(){
-    if(profileImage.classList.contains('profile__image_unvisiable')){
-      profileImage.classList.remove('profile__image_unvisiable');
-    }
-    else {
-      profileImage.classList.add('profile__image_unvisiable');
-    }
+window.onclick = function(event) {
+  if (event.target == modal) {
+      modal.style.display = "none";
   }
+}
+function checkClickCard(elem){
+  elem.addEventListener('click',zoomCard);
+}
+function zoomCard() {
+  let zoom_image=document.querySelector(".zoom-image");
+  zoom_image.src=this.src;
+  modal.style.display = "block";
+}
+
+function removeParent(){
+  let revDiv = this.parentElement;
+  revDiv.remove();
+  deleteFromCards(this.parentElement.id);
+}
+
+function createEventLForDelete(elem) {
+  elem.addEventListener('click', removeParent);
+}
+
+function createEventForLike(elem) {
+  elem.addEventListener('click', setLike);
+}
+
+function setLike(){
+  if(this.classList.contains('card__like_checked')){
+    this.classList.remove('card__like_checked');
+  } else {
+    this.classList.add('card__like_checked');
+}    
+}
