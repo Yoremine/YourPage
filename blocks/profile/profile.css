@@ -2,9 +2,11 @@
 .profile{
   display: flex;
   flex-direction: column;
-  max-width: 500px;
-  margin: 10px auto;
-  outline: red solid 1px;
+  width: 500px;
+  margin: 0 auto;
+  outline: black solid 1px;
+  border-radius: 5%;
+  background-color: rgb(190, 186, 186);
 }
 
 .profile__title{
@@ -26,10 +28,6 @@
 }
 
 .profile__button{
-  margin: 20px auto 0 auto;
+  margin: 20px auto 20px auto;
   
-}
-
-.profile_unvisiable{
-  display: none;
 }

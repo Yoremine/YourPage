@@ -14,7 +14,7 @@ dialog::backdrop {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  
+  background-color: rgb(92, 92, 92);
 }
 
 .root__title{
